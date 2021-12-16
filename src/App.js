@@ -20,7 +20,7 @@ export default function App() {
       return (
         <div>
           <div>
-            <b>Name:</b> {personArray[0]} {personArray[1]},<b>Pronouns:</b>{" "}
+            <b>Name:</b> {personArray[0]} {personArray[1]}, <b>Pronouns:</b>{" "}
             {personArray[2]}
           </div>
           <br />
