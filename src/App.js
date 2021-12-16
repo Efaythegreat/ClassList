@@ -1,14 +1,5 @@
 import "./styles.css";
 
-function makeDiv(personArray) {
-  return (
-    <div>
-      <b>Name:</b> {personArray[0]} {personArray[1]}, <b>Pronouns:</b>{" "}
-      {personArray[2]}
-    </div>
-  );
-}
-
 export default function App() {
   let elements = [
     ["Victor", "Lymar", "He/Him"],
@@ -24,10 +15,19 @@ export default function App() {
     ["Hector", "Del Valle", "He/Him"]
   ];
 
-  let divs = [];
-  for (let i = 0; i < elements.length; i++) {
-    divs.push(makeDiv(elements[i]));
-    divs.push(<br />);
+  function makeDiv2(pArrays) {
+    let pArray = pArrays.map(function makeDiv(personArray) {
+      return (
+        <div>
+          <div>
+            <b>Name:</b> {personArray[0]} {personArray[1]},<b>Pronouns:</b>{" "}
+            {personArray[2]}
+          </div>
+          <br />
+        </div>
+      );
+    });
+    return pArray;
   }
 
   return (
@@ -35,7 +35,7 @@ export default function App() {
       <h1>Hello Team</h1>
       <h2>Start editing to see some magic happen!</h2>
 
-      {divs}
+      {makeDiv2(elements)}
     </div>
   );
 }
