@@ -2,3 +2,32 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.body {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.peopleC {
+  width: 300px;
+  height: 2%px;
+  margin: 10px;
+  padding: 13px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: lightblue;
+  border-radius: 25px;
+  transition: transform 200ms;
+}
+
+h1 {
+  transition: transform 200ms;
+  margin-bottom: 2%;
+  padding: 10px;
+}
+
+.peopleC:hover,
+h1:hover {
+  transform: translateY(-5px);
+}

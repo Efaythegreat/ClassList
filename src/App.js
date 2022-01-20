@@ -32,6 +32,7 @@ export default function App() {
   }
 */
 
+  //info on the class
   let objects = [
     {
       f: "Victor",
@@ -53,7 +54,7 @@ export default function App() {
       f: "Ida",
       l: "Voong",
       pronoun: "She/Her",
-      school: "Oakland Technical High School",
+      school: "Oakland Technical High",
       graduationYear: 2022,
       favoriteColor: "blue"
     },
@@ -62,93 +63,102 @@ export default function App() {
       l: "Rivera",
       pronoun: "She/Her",
       school: "CSU East Bay",
-      graduationYear: 0,
-      favoriteColor: ""
+      graduationYear: 2051,
+      favoriteColor: "Green"
     },
     {
       f: "Aidan",
       l: "Fuller",
       pronoun: "He/Him",
-      school: "",
-      graduationYear: 0,
-      favoriteColor: ""
+      school: "Oakland Technical High",
+      graduationYear: 2023,
+      favoriteColor: "Red"
     },
     {
       f: "kyle",
       l: "wan",
       pronoun: "He/Him",
-      school: "",
-      graduationYear: 0,
-      favoriteColor: ""
+      school: "Oakland Technical",
+      graduationYear: 2023,
+      favoriteColor: "yeah."
     },
     {
       f: "Enjun",
       l: "Li",
       pronoun: "He/Him",
-      school: "",
-      graduationYear: 0,
-      favoriteColor: ""
+      school: "John O' Connell",
+      graduationYear: 2022,
+      favoriteColor: "black"
     },
     {
       f: "Luis",
       l: "Garcia",
       pronoun: "He/Him",
       school: "CSU East Bay",
-      graduationYear: 0,
-      favoriteColor: ""
+      graduationYear: 2025,
+      favoriteColor: "Black"
     },
     {
       f: "Amanda",
       l: "Yu",
       pronoun: "She/Her",
-      school: "Oakland Technical High School",
-      graduationYear: 0,
-      favoriteColor: ""
+      school: "Oakland Technical High",
+      graduationYear: 2022,
+      favoriteColor: "blue"
     },
     {
       f: "Yifei",
       l: "Du",
       pronoun: "He/Him",
-      school: "",
-      graduationYear: 0,
-      favoriteColor: ""
+      school: "Balboa HS",
+      graduationYear: 2022,
+      favoriteColor: "Black"
     },
     {
       f: "Hector ",
       l: "Del Valle",
       pronoun: "He/Him",
-      school: "",
-      graduationYear: 0,
-      favoriteColor: ""
+      school: "John O'Connell High",
+      graduationYear: 2022,
+      favoriteColor: "Gray"
     },
     {
       f: "HaoYu",
       l: "Lin",
       pronoun: "He/Him",
-      school: "Oakland Technical High School",
-      graduationYear: 0,
-      favoriteColor: ""
+      school: "Oakland Technical High",
+      graduationYear: 2023,
+      favoriteColor: "Red"
     }
   ];
 
   return (
     <div className="App">
-      <h1>Hello Team</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      {objects.map(function (obj) {
-        return (
-          <div>
-            <div>
-              Name: {obj.f} {obj.l}
+      <h1>Code Nation: The Team List</h1>
+      <div class="body">
+        {objects.map(function (obj) {
+          return (
+            <div class="peopleC">
+              <div>
+                <b>Name:</b> {obj.f} {obj.l}
+              </div>
+              <div>
+                <b>Pronoun:</b> {obj.pronoun}
+              </div>
+              <div>
+                <b>School:</b> {obj.school}
+              </div>
+              <div>
+                <b>Graduation Year:</b> {obj.graduationYear}
+              </div>
+              <div>
+                <b>Favorite Color:</b> {obj.favoriteColor}
+              </div>
+              <p></p>
             </div>
-            <div>Pronoun: {obj.pronoun}</div>
-            <div>School: {obj.school}</div>
-            <div>Graduation Year: {obj.guaduationYear}</div>
-            <div>Favorite Color: {obj.favoriteColor}</div>
-            <p></p>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 }
